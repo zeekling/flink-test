@@ -1,5 +1,8 @@
 package com.thinker.model;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 /**
  * @author zeekling [lingzhaohui@zeekling.cn]
  * @version 1.0
