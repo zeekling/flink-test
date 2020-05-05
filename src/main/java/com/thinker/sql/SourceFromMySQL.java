@@ -25,7 +25,7 @@ public class SourceFromMySQL extends RichSourceFunction<Student> {
     /**
      * open() 方法中建立连接，这样不用每次 invoke 的时候都要建立连接和释放连接。
      *
-     * @param parameters
+     * @param parameters 配置参数
      * @throws Exception
      */
     @Override
