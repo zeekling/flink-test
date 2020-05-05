@@ -73,6 +73,7 @@ public class SourceFromMySQL extends RichSourceFunction<Student> {
 
     @Override
     public void cancel() {
+
     }
 
     private static Connection getConnection() {

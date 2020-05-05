@@ -34,7 +34,7 @@ public class KafkaUtils {
         Map<String, Object> fields = new HashMap<>();
 
         tags.put("cluster", "zhisheng");
-        tags.put("host_ip", "101.147.022.106");
+        tags.put("host_ip", "127.0.0.1");
 
         fields.put("used_percent", 90d);
         fields.put("max", 27244873d);
@@ -53,8 +53,8 @@ public class KafkaUtils {
 
     public static void main(String[] args) throws InterruptedException {
         while (true) {
-            Thread.sleep(300);
             writeToKafka();
+            Thread.sleep(3000);
         }
     }
 
