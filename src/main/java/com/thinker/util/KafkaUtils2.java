@@ -17,7 +17,7 @@ public class KafkaUtils2 {
 
 
     private static final String broker_list = "localhost:9092";
-    private static final String topic = "student";  //kafka topic 需要和 flink 程序用同一个 topic
+    private static final String topic = "student-write";  //kafka topic 需要和 flink 程序用同一个 topic
 
     private static void writeToKafka() throws InterruptedException {
         Properties props = new Properties();

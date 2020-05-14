@@ -26,7 +26,7 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println("H   ello World!");
+        System.out.println("Hello World!");
         if (args.length != 2) {
             System.err.println("USAGE:\nSocketTextStreamWordCount <hostname> <port>");
             return;
