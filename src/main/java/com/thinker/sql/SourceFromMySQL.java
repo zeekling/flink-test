@@ -3,7 +3,6 @@ package com.thinker.sql;
 import com.thinker.model.Student;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
-import org.apache.flink.streaming.api.functions.source.SourceFunction;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
