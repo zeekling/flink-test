@@ -18,6 +18,10 @@ import java.sql.ResultSet;
 public class SourceFromMySQL extends RichSourceFunction<Student> {
 
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private PreparedStatement ps;
     private Connection connection;
 

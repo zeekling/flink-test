@@ -14,6 +14,11 @@ public class App {
 
     public static final class LineSplitter implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = -8040066741965799728L;
+
         @Override
         public void flatMap(String s, Collector<Tuple2<String, Integer>> collector) throws Exception {
             String[] tokens = s.toLowerCase().split("\\W+");
