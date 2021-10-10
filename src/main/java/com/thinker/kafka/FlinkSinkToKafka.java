@@ -26,7 +26,7 @@ public class FlinkSinkToKafka {
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("auto.offset.reset", "latest");
-        DataStreamSource<String> student = env.addSource(new FlinkKafkaConsumer011<>(
+        DataStreamSource<String> student = env.addSource(new FlinkKafkaConsumer<>(
                 READ_TOPIC,   //这个 kafka topic 需要和上面的工具类的 topic 一致
                 new SimpleStringSchema(),
                 props)).setParallelism(1);
@@ -36,7 +36,7 @@ public class FlinkSinkToKafka {
         properties.setProperty("zookeeper.connect", "localhost:2181");
         properties.setProperty("group.id", "student-write");
 
-        student.addSink(new FlinkKafkaProducer011<String>(
+        student.addSink(new FlinkKafkaProducer<String>(
                 "student-write",
                 new SimpleStringSchema(),
                 properties

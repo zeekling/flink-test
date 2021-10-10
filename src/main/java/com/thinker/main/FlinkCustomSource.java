@@ -16,7 +16,7 @@ public class FlinkCustomSource {
 
         env.addSource(new SourceFromMySQL()).print();
 
-        env.execute("Flink add data sourc");
+        env.execute("Flink add data source");
     }
 
 }
